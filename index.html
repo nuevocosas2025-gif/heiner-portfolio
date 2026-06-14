@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio personal de Luis Heiner Castillo Hurtado - Estudiante de Desarrollo de Sistemas y apasionado por la tecnología.">
+  <title>Luis Heiner Castillo Hurtado | Portafolio</title>
+  
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for Social Media -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Estilos del sitio -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Background Decorative Orbs -->
+  <div class="blob-container">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Glassmorphism Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">hello<span>.baby</span></a>
+      <nav class="nav-links">
+        <a href="#inicio" class="active">Inicio</a>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#galeria">Galería</a>
+        <a href="#conectar">Conectar</a>
+      </nav>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-info animate-on-scroll fade-in-left">
+          <span class="badge">Disponible para conectar</span>
+          <h1 class="hero-title">¡Hola! Soy <span class="gradient-text">Luis Heiner</span> 👋</h1>
+          <p class="hero-subtitle">
+            Estudiante de Desarrollo de Sistemas, apasionado por la tecnología y creador de ideas.
+          </p>
+          <div class="hero-cta">
+            <a href="#sobre-mi" class="btn btn-primary" id="btnConoceme">
+              <span>Conóceme un poco más</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-container animate-on-scroll fade-in-right">
+          <div class="image-wrapper">
+            <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781455174/WhatsApp_Image_2026-06-14_at_11.38.34_1_gqybck.jpg" alt="Foto de Luis Heiner Castillo Hurtado" class="hero-img">
+            <div class="image-bg-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Mí Section -->
+    <section id="sobre-mi" class="about-section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Mi Lado <span class="gradient-text-green">Humano</span></h2>
+        <div class="about-grid">
+          <div class="about-text animate-on-scroll fade-in-left">
+            <p>
+              ¡Bienvenidos a mi espacio! Soy estudiante de <span class="highlight neon-green">Desarrollo de Sistemas de Información</span>, lo que significa que paso buena parte de mi día resolviendo problemas y descifrando código. Pero no te dejes engañar, no soy el típico informático que vive pegado a la pantalla: como buen <span class="highlight neon-white">Leo</span>, me encanta la interacción social. Soy <span class="highlight neon-green">súper extrovertido</span> y, advertencia, si me das un poquito de confianza, <span class="highlight neon-white">hablo hasta por los codos</span>. Mi vida es un <span class="highlight neon-green">balance perfecto</span> entre la lógica de la tecnología y disfrutar al máximo de una buena charla.
+            </p>
+          </div>
+          <div class="about-media animate-on-scroll fade-in-right" id="aboutInteractiveMedia">
+            <div class="interactive-card card-1">
+              <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781454190/WhatsApp_Image_2026-06-14_at_11.15.31_v8xrxa.jpg" alt="Foto secundaria 1 de Heiner" class="about-img">
+              <div class="card-glow-green"></div>
+            </div>
+            <div class="interactive-card card-2">
+              <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781455203/WhatsApp_Image_2026-06-14_at_11.38.35_2_fuimsp.jpg" alt="Foto secundaria 2 de Heiner" class="about-img">
+              <div class="card-glow-white"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería Dinámica Section -->
+    <section id="galeria" class="gallery-section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Momentos & <span class="gradient-text-green">Vibras</span></h2>
+        <p class="section-subtitle animate-on-scroll">Un vistazo rápido a mi día a día fuera del código</p>
+        
+        <!-- Showcase centrado y acotado -->
+        <div class="gallery-showcase animate-on-scroll">
+          
+          <!-- Marquee Carrusel Continuo (Izquierda) -->
+          <div class="marquee-wrapper">
+            <div class="marquee-track" id="marqueeTrack1">
+              <!-- Fotos únicas (5 imágenes) -->
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781455259/WhatsApp_Image_2026-06-14_at_11.38.35_1_icol8w.jpg" alt="Galería 1">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781455167/WhatsApp_Image_2026-06-14_at_11.38.34_bpxw66.jpg" alt="Galería 2">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781455181/WhatsApp_Image_2026-06-14_at_11.38.35_xkttxl.jpg" alt="Galería 3">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781457121/IMG_20260518_205402_h2qmz1.jpg" alt="Galería 4">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781457090/IMG_20260526_204817_jo2vpk.jpg" alt="Galería 5">
+                <div class="item-overlay"></div>
+              </div>
+              <!-- Duplicados para ciclo infinito -->
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781455259/WhatsApp_Image_2026-06-14_at_11.38.35_1_icol8w.jpg" alt="Galería 1 Duplicada">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781455167/WhatsApp_Image_2026-06-14_at_11.38.34_bpxw66.jpg" alt="Galería 2 Duplicada">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781455181/WhatsApp_Image_2026-06-14_at_11.38.35_xkttxl.jpg" alt="Galería 3 Duplicada">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781457121/IMG_20260518_205402_h2qmz1.jpg" alt="Galería 4 Duplicada">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781457090/IMG_20260526_204817_jo2vpk.jpg" alt="Galería 5 Duplicada">
+                <div class="item-overlay"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Marquee Carrusel Continuo (Derecha) -->
+          <div class="marquee-wrapper reverse">
+            <div class="marquee-track" id="marqueeTrack2">
+              <!-- Fotos únicas (5 imágenes) -->
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781457090/IMG_20260526_204817_jo2vpk.jpg" alt="Galería 5">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781457121/IMG_20260518_205402_h2qmz1.jpg" alt="Galería 4">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781455181/WhatsApp_Image_2026-06-14_at_11.38.35_xkttxl.jpg" alt="Galería 3">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781455167/WhatsApp_Image_2026-06-14_at_11.38.34_bpxw66.jpg" alt="Galería 2">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781455259/WhatsApp_Image_2026-06-14_at_11.38.35_1_icol8w.jpg" alt="Galería 1">
+                <div class="item-overlay"></div>
+              </div>
+              <!-- Duplicados para ciclo infinito -->
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781457090/IMG_20260526_204817_jo2vpk.jpg" alt="Galería 5 Duplicada">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781457121/IMG_20260518_205402_h2qmz1.jpg" alt="Galería 4 Duplicada">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781455181/WhatsApp_Image_2026-06-14_at_11.38.35_xkttxl.jpg" alt="Galería 3 Duplicada">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781455167/WhatsApp_Image_2026-06-14_at_11.38.34_bpxw66.jpg" alt="Galería 2 Duplicada">
+                <div class="item-overlay"></div>
+              </div>
+              <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dnb8mvqqc/image/upload/v1781455259/WhatsApp_Image_2026-06-14_at_11.38.35_1_icol8w.jpg" alt="Galería 1 Duplicada">
+                <div class="item-overlay"></div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Conecta Conmigo Section -->
+    <section id="conectar" class="contact-section">
+      <div class="container text-center">
+        <h3 class="contact-highlight animate-on-scroll">¿Hablamos?</h3>
+        <p class="contact-subtitle animate-on-scroll">¡Estoy a un solo click de distancia para intercambiar ideas!</p>
+        
+        <!-- Social Cards Grid -->
+        <div class="social-grid animate-on-scroll">
+          
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/search/top/?q=Heiner%20Castillo" target="_blank" rel="noopener noreferrer" class="social-card fb" id="social-fb">
+            <div class="social-card-inner">
+              <div class="icon-box">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <h4>Facebook</h4>
+              <p>Heiner Castillo</p>
+            </div>
+            <div class="social-hover-bg"></div>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/heiner_30" target="_blank" rel="noopener noreferrer" class="social-card ig" id="social-ig">
+            <div class="social-card-inner">
+              <div class="icon-box">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <h4>Instagram</h4>
+              <p>@heiner_30</p>
+            </div>
+            <div class="social-hover-bg"></div>
+          </a>
+
+          <!-- TikTok -->
+          <a href="https://www.tiktok.com/@heiner_30" target="_blank" rel="noopener noreferrer" class="social-card tt" id="social-tt">
+            <div class="social-card-inner">
+              <div class="icon-box">
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+              <h4>TikTok</h4>
+              <p>@heiner_30</p>
+            </div>
+            <div class="social-hover-bg"></div>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/51927873842?text=¡Hola%20Heiner!%20Vi%20tu%20portafolio%20y%20me%20gustaría%20conectar%20contigo." target="_blank" rel="noopener noreferrer" class="social-card wa" id="social-wa">
+            <div class="social-card-inner">
+              <div class="icon-box">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <h4>WhatsApp</h4>
+              <p>927 873 842</p>
+            </div>
+            <div class="social-hover-bg"></div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Luis Heiner Castillo Hurtado. Diseñado con ❤️ y código vibrante.</p>
+      <a href="#" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
